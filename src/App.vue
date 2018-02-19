@@ -11,19 +11,33 @@ export default {
 </script>
 
 <style>
-.table {
+
+@media screen and (min-width: 760px) {
+  .wrapper {
+    width: 50%;
+    margin: 0 auto;
+  }
+}
+
+.card {
   border: 1px solid black;
+  padding: 0.2em;
+}
+
+.table {
+  border: 0.5px solid black;
   width: 100%;
   text-align: center;
-  margin-bottom: 1em;
+  margin-bottom: 0.2em;
+  margin-top: 0.2em;
 }
 
 .table td {
   border: 0.5px solid black;
-  width: 11%;
+  width: 11% !important;
   font-weight : bold;
   font-size: 20pt;
-  height: 1.2em;
+  height: 1.2em !important;
 }
 
 .table td span {

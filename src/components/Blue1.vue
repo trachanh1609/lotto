@@ -1,15 +1,19 @@
 <template lang="html">
   <div class="row">
     <h3>Blue 1</h3>
-    <table v-for="table in tables" class="table">
-      <tr v-for="row in table.rows">
-        <td v-for="number in row.numbers" :class="[ number.data == '' ? color : '' ]">
-          <span @click="number.crossed = !number.crossed "
-            :class="{'crossed': number.crossed}"
-          >{{number.data}}</span>
-        </td>
-      </tr>
-    </table>
+    <div class="wrapper">
+      <div class="card">
+        <table v-for="table in tables" class="table">
+          <tr v-for="row in table.rows">
+            <td v-for="number in row.numbers" :class="[ number.data == '' ? color : '' ]">
+              <span @click="number.crossed = !number.crossed "
+                :class="{'crossed': number.crossed}"
+              >{{number.data}}</span>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
   </div>
 </template>
 
