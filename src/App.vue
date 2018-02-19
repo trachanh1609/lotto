@@ -1,5 +1,16 @@
 <template>
   <div id="app">
+    <header class="row">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <h2>Welcome to Lô Tô Việt</h2>
+        <ul class="navbar-nav">
+            <router-link tag="li" to="/"><a class="nav-link">Home</a></router-link>
+            <router-link tag="li" to="/gamestart"><a class="nav-link">Start Game</a></router-link>
+            <router-link tag="li" to="/blue1"><a class="nav-link">Blue 1</a></router-link>
+            <router-link tag="li" to="/brown1"><a class="nav-link">Brown 1</a></router-link>
+        </ul>
+      </nav>
+    </header>
     <router-view/>
   </div>
 </template>
@@ -54,6 +65,15 @@ export default {
 .crossed {
   background: green;
   opacity: 0.7;
+}
+
+.navbar-nav {
+  display: inline;
+}
+
+.navbar-nav li {
+  display: inline;
+  margin: 0 1em 0 1em;
 }
 
 /*.ball {

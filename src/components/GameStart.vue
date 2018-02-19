@@ -1,8 +1,5 @@
 <template lang="html">
   <div class="row">
-    <div>
-      <router-link to="/"><a class="nav-link">Home</a></router-link>
-    </div>
     <br>
     <div class="col-sm-12 text-center">
       <div class="buttonWrapper">
