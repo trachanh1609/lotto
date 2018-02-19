@@ -48,6 +48,9 @@ export default {
 .colorBlue {
   background: blue;
 }
+.colorBrown {
+  background: brown;
+}
 .crossed {
   background: green;
   opacity: 0.7;
