@@ -2,8 +2,8 @@
   <div class="row">
     <div class="col-sm-12 text-center">
       <div class="buttonWrapper">
-        <button class="btn" type="button" @click="draw()">New Number</button>
-        <button class="btn" type="button" @click="reset()">Reset</button>
+        <button class="btn" type="button" @click="draw()">Bốc số mới</button>
+        <button class="btn" type="button" @click="reset()">Bắt đầu lại</button>
       </div>
     </div>
     <br>
@@ -16,6 +16,10 @@
           </div>
         </transition>
 
+      </div>
+      <div class="row">
+        <hr>
+        <p>Các số cũ đã xuất hiện : </p>
       </div>
       <div class="row">
         <section class="stage" v-for="number in displayNumbers">
@@ -74,7 +78,9 @@ export default {
 
     },
     reset() {
-      this.drawedNumber = [];
+      if(confirm("Xóa hết các số đã bốc ? ")){
+        this.drawedNumber = [];
+      }
     },
     toggleShow(){
       this.show = false;
